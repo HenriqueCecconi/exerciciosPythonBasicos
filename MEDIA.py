@@ -14,9 +14,11 @@ for i in range(linhas):
         soma=soma+matriz[i][j]
     print(soma/len(matriz[0]))
     matriz[i].append(soma/colunas)
+for i in range(linhas):
+    for j in range(colunas + 1):
+        matriz[i][j] = "%.2f" % matriz[i][j]
 
-        
-    
+print(matriz)
         
 
 
